@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .body{
@@ -13,7 +17,15 @@ body{
     align-items: center;
 }
 
-
+button{
+    color: white;
+    background-color: teal;
+    padding: 7px 10px;
+    border: none;
+}
+input{
+    padding: 5px 10px;
+}
 
 .widget{
 
@@ -23,4 +35,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.widget ul{
+    background: rgb(229, 255, 228);
+    padding: 0px;
+    padding: 20px;
+}
+.widget li{
+    list-style: none;
+    padding: 3px 0px; 
+ 
+}
+.widget ul span{
+    color: teal;
+    font-weight: bold;
 }

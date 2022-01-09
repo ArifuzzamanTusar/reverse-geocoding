@@ -13,10 +13,24 @@
 <body>
     <section class="body">
         <div class="widget">
-            <input id="show_cords" type="text" value=" ">
-            <button onclick="getLocation()">Try It</button>
+            <div class="inner">
+                <input id="show_cords" type="text" value=" ">
+                <button onclick="getLocation()">Try It</button>
+                <div id="show_res">
+                   <ul>
+                       <li>Place: <span id="placename"></span></li>
+                       <li>city: <span id="city"></span></li>
+                       <li>district: <span id="district"></span></li>
+                       <li>division: <span id="division"></span></li>
+                       <li>postcode: <span id="postcode"></span></li>
+                       <li>country: <span id="country"></span></li>
+                   </ul>
+                </div>
+            </div>
+
+            
         </div>
-        <div id="show_res"></div>
+
     </section>
 
 
