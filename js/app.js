@@ -22,13 +22,16 @@ function showPosition(position) {
   var requestOptions = {
     method: "GET",
   };
-
-  fetch(
-    "https://api.geoapify.com/v1/geocode/reverse?lat="+lat+"&lon="+long+"&format=json&type=city&apiKey="+apikey+"",
-    requestOptions
-  )
+  var responseArray=0;
+  fetch("https://api.geoapify.com/v1/geocode/reverse?lat="+lat+"&lon="+long+"&format=json&type=city&apiKey="+apikey+"",requestOptions)
     .then((response) => response.json())
     .then((result) => console.log(result))
+    // .then((result) => responseArray)
     // .then((result) =>   show.innerHTML(result))
     .catch((error) => console.log("error", error));
+
+
+    // console.log(results.city);
 }
+
+
